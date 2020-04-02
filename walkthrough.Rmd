@@ -2,16 +2,18 @@
 title: "Tidycensus Walkthrough"
 author: "Jackson M Luckey"
 date: "3/31/2020"
-output: html_document
+output:
+  tufte::tufte_html: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r loadPackages, echo=FALSE}
+```{r loadPackages, echo=FALSE, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(knitr) # for kable
+library(tufte)
 ```
 
 # Introduction to Tidycensus
